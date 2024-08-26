@@ -1,0 +1,153 @@
+.HomepageTitleContent {
+    
+}
+
+.homepage-main-container {
+    display: inline;
+}
+
+.homepage-main-image {
+    position: relative;
+    width: 100%;
+    height: clamp(600px, 70vh, 700px);
+    background: url('https://images.pexels.com/photos/4473896/pexels-photo-4473896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    transition: background-image 1s ease-in-out;
+}
+
+.homepage-main-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 32%, var(--background-white) 48%);
+}
+
+.homepage-main-info-icons {
+    position: absolute;
+    top: 49px;
+    right: 53px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+.homepage-slogan p {
+    font-size: 2.9rem;
+    font-weight: 600;
+    line-height: 4.4rem;
+}
+
+.homepage-slogan p span {
+    background-color: var(--primary-brown);
+    color: var(--background-white);
+    border: 1px solid var(--primary-brown);
+    border-radius: 10px;
+    padding: 4px 11px;
+}
+
+.homepage-services-info {
+    
+}
+
+.homepage-services-info p {
+    font-size: 0.8rem;
+}
+
+.icon-container-btn {
+    width: 100%;
+    height: 100%;
+    border: solid 1px rgba(204, 204, 204, 0.25);
+    background-color: var(--background-white);
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--secondary-brown_1);
+    transition: 0.3s;
+}
+
+.icon-container-btn:hover {
+    background-color: #F7E5D3;
+    color: var(--primary-green);
+}
+
+
+.icon-container {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 13px;
+    border-radius: 100%;
+    background-color: #F7E5D3;
+}
+
+.icon-container svg {
+    color: var(--primary-green);
+    width: 25px;
+    height: 25px;
+}
+
+.homepage-main-info-icons ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: clamp(10px, 1rem, 16px);
+    width: 100%;
+}
+
+.homepage-main-info-icons ul li {
+    width: clamp(200px, 2rem, 206px);
+    height: 122px;
+}
+
+
+
+#explore-btn {
+    width: 183px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: var(--primary-brown);
+    font-size: 1rem;
+    letter-spacing: 0.01rem;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    color: var(--background-white);
+    border: var(--primary-brown) 1px solid;
+    cursor: pointer;
+}
+
+#explore-btn:hover {
+    background-color: var(--background-white);
+    color: var(--primary-brown);
+}
+
+@media (width < 1410px) {
+    .homepage-main-info-icons {
+        top: 70px;
+        gap: 21px;
+    }
+}
+
+@media (width < 1300px) {
+    .homepage-main-info-icons ul li {
+        height: 110px;
+    }
+
+    .icon-container svg {
+        width: 20px;
+        height: 20px
+    }
+}
+
+@media (width < 1150px) {
+    /* Make buttons with icons columnized */
+    /* Have them expand when hovered over */
+}

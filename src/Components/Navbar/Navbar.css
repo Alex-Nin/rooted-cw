@@ -1,0 +1,232 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: var(--secondary-brown);*/
+    padding: var(--webpage-margin-padding);
+    padding: 0.6rem 5rem;
+    width: 100%;
+}
+
+.left-nav-bar {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    gap: 1.6rem;
+    width: clamp(480px, 80%, 2000px);
+}
+
+.logo {
+    text-align: center;
+    font-size: small;
+    cursor: pointer;
+}
+
+.tempLogo {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--primary-brown);
+}
+
+.tempLogo p {
+    font-weight: 500;
+}
+
+.links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 34px;
+}
+
+.links ul li a {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.links ul li::after { 
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-brown);
+    display: block;
+    margin: auto;
+    transition: 0.2s;
+}
+
+.links ul li:hover::after {
+    width: 100%;
+}
+
+.menu-btn,
+.close-menu-btn{
+    display: none;
+    background-color: var(--transparent-bg);
+    border: none;
+}
+
+.menu-btn svg, .close-menu-btn svg{
+    height: 24px;
+    width: 24px;
+    color: var(--primary-green);
+}
+
+.right-nav-bar {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.search-btn-container {
+    display: none;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+}
+
+.search-btn {
+    width: 100%;
+    height: 100%;
+    stroke-width: 0.8px;
+}
+
+.newsletter-btn-container {
+    width: fit-content;
+    height: fit-content;
+}
+
+#newsletter-btn {
+    background-color: var(--primary-brown);
+    border: 1px solid var(--primary-brown);
+    border-radius: 50px;
+    padding: 9px 18px;
+    font-weight: 700;
+    color: var(--background-white);
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+#newsletter-btn:hover {
+    background-color: var(--background-white);
+    color: var(--primary-brown);
+}
+
+@media (width < 996px) {
+
+    .Navbar {
+        padding: 0.5rem 5rem;
+    }
+
+    .logo p {
+        display: none;
+    }
+
+    .left-nav-bar {
+        gap: 25px;
+    }
+
+    .links ul{
+        gap: 25px;
+    }
+
+    .links ul li a,
+    #newsletter-btn {
+        font-size: 0.8rem;
+    }
+
+    .search-btn-container {
+        width: 30px;
+        height: 30px;
+      }
+}
+
+@media (width < 751px) {
+    
+    .navbar-color-change {
+        background-color: var(--light-brown-wo-transparency);
+    }
+
+    .navbar-color-change h1 {
+        color: #04573D;
+    }
+
+    .left-nav-bar{
+        display: none;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .close-menu-btn {
+        display: none;
+    }
+
+    .menu-btn, .close-menu-btn {
+        align-self: center;
+    }
+
+    .close-btn-visible {
+        display: flex;
+    }
+
+    .menu-open {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        background-color: var(--light-brown-wo-transparency);
+        top: 45px;
+        z-index: 5;
+        width: 100vw;
+        left: 0;
+        overflow: hidden;
+        padding: 1.2rem 1rem 1.7rem 5rem;
+    }
+
+    .menu-open ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        color: black;
+    }
+
+    .menu-open ul li a {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #04573D;
+    }
+
+    .menu-open ul li::after {
+        background-color: #04573D;
+    }
+
+    #newsletter-btn {
+        font-size: 1.25rem;
+        background-color: #04573D;
+        border: 1px solid #04573D;
+    }
+
+    #newsletter-btn:hover {
+        background-color: var(--light-brown-wo-transparency);
+        color: #04573D;
+    }
+}
+
+@media (width < 576px) {
+    .Navbar {
+        padding: 0.5rem 3rem;
+    }
+
+    .menu-open {
+        padding-left: 3rem;
+    }
+    
+}
+

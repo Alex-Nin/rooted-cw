@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+#root {
+  max-width: 1500px;
+  margin-inline: auto;
+}
+
+:root {
+  --webpage-margin-padding: 0 5rem;
+  --primary-green: #40826D;
+  --secondary-green: #70B49E;
+  --primary-brown: #E5AA70;
+  --secondary-brown_1: #D4A373;
+  --tertiary-brown: #E3A587;
+  --light-brown-wo-transparency: #f6f1eb;
+  --background-white: #F9F9F9;
+  --primary-black: #000;
+  --transparent-bg: rgba(0, 0, 0, 0);
+  --text-color: #000;
+  --accent-one: #82405E;
+  --accent-two: #FF6347;
+  --neutral-one: #333333;
+  --neutral-two: #CCCCCC;
+  --muted-accent-one: #6E3A4E;
+  --muted-accent-two: #E57373;
+}
+
+body {
+  font-family:  'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-white);
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a{
+  text-decoration: none;
+  color: var(--primary-black);
+}
+
+li {
+  list-style: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  
+}
+
+
+@keyframes App-logo-spin {
+
+}

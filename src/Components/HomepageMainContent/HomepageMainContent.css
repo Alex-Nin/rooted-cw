@@ -1,0 +1,86 @@
+
+/* Instead of Media Querys, opt to using functions like min, max, and clamp in order to optimize the code */ 
+.HomepageMainContent {
+
+}
+
+.services-steps-container {
+    background-color: rgba(212, 163, 115, 0.10);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 5rem;
+    border-radius: 36px;
+    padding: 64px 111px 120px;
+    gap: 54px;
+}
+
+.steps-title-container {
+
+}
+
+.steps-title-container p {
+    align-self: flex-start;
+    font-size: 0.87rem;
+    font-weight: 500;
+    color: var(--secondary-brown_1);
+}
+
+.steps-title {
+    font-size: 2.3rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: #5b5b5b;
+}
+
+.steps-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 77px;
+    width: 100%;
+}
+
+.steps-card {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 191px;
+    background-color: var(--background-white);
+    border-radius: 20px;
+    padding: 12px 33px;
+    box-shadow: 1px 1px 34px rgba(0, 0, 0, 0.1);
+}
+
+.offset-card {
+    top: 44px;
+}
+
+.step-card-icon-container {
+    position: absolute;
+    width: 39px;
+    height: 29px;
+    top: 9px;
+    right: 30px;
+}
+
+.step-number p {
+    font-size: 2.4rem;
+    letter-spacing: 0.5rem;
+    font-weight: 800;
+    text-shadow: 1px 1px 0 var(--primary-green), -1px -1px 0 var(--primary-green), -1px 1px 0 var(--primary-green), 1px -1px 0 var(--primary-green);
+    color: var(--background-white);
+}
+
+.step-name p {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.step-description p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}

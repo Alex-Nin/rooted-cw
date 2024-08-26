@@ -1,0 +1,46 @@
+.Footer {
+    background-color: var(--secondary-brown);
+    height: 68px;
+    width: 100%;
+    padding: 0.6rem 5rem;
+}
+.logo-social {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    font-size: small;
+}
+
+.tempLogo {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--primary-green);
+}
+
+.copywrite-container {
+    
+}
+
+.copywrite-container p {
+    color: var(--primary-green);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.social-icons {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5px;
+}
+
+.social-link {
+    color: var(--primary-green);
+}
+
+.social-link:hover {
+    color: black;
+}
