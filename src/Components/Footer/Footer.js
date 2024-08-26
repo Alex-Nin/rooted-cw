@@ -16,10 +16,10 @@ const Footer = () => {
         </div>
         <div className='copywrite-container'><p>© 2024 All Rights Reserved.</p></div>
         <div className='social-icons'>
-          <a href='#' className='social-link insta-link'><div className='social-icon-container'><PiInstagramLogo /></div></a>
-          <a href='#' className='social-link fb-link'><div className='social-icon-container'><PiFacebookLogo /></div></a>
-          <a href='#' className='social-link linkedin-link'><div className='social-icon-container'><RxLinkedinLogo /></div></a>
-          <a href='#' className='social-link x-link'><div className='social-icon-container'><RiTwitterXLine /></div></a>
+          <a href='instagram.com' className='social-link insta-link'><div className='social-icon-container'><PiInstagramLogo /></div></a>
+          <a href='facebook.com' className='social-link fb-link'><div className='social-icon-container'><PiFacebookLogo /></div></a>
+          <a href='linkedin.com' className='social-link linkedin-link'><div className='social-icon-container'><RxLinkedinLogo /></div></a>
+          <a href='x.com' className='social-link x-link'><div className='social-icon-container'><RiTwitterXLine /></div></a>
         </div>
       </div>
       <ul className='footer-links-left'></ul>
