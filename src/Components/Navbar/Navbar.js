@@ -32,10 +32,10 @@ const Navbar = () => {
       <div className={`left-nav-bar ${isOpen ? 'menu-open' : ''}`}>
         <div className='links'>
             <ul>
-                <li><Link to='/' >Home</Link></li>
-                <li><Link to='/about' >About us</Link></li>
-                <li><Link to='/services'>Services</Link></li>
-                <li><Link to='/contact-us' >Contact Us</Link></li>
+                <li><Link to='/rooted-cw' >Home</Link></li>
+                <li><Link to='/rooted-cw/about' >About us</Link></li>
+                <li><Link to='/rooted-cw/services'>Services</Link></li>
+                <li><Link to='/rooted-cw/contact-us' >Contact Us</Link></li>
             </ul>
         </div>
         
