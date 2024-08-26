@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/rooted-cw/static/css/main.80cc35f7.css",
+    "main.js": "/rooted-cw/static/js/main.3f2757bb.js",
+    "static/media/portrait.png": "/rooted-cw/static/media/portrait.12bd467fa090f1639004.png",
+    "index.html": "/rooted-cw/index.html",
+    "main.80cc35f7.css.map": "/rooted-cw/static/css/main.80cc35f7.css.map",
+    "main.3f2757bb.js.map": "/rooted-cw/static/js/main.3f2757bb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80cc35f7.css",
+    "static/js/main.3f2757bb.js"
+  ]
+}
